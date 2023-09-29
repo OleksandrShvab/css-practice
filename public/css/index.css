@@ -1,0 +1,22 @@
+html {
+  max-width: 720px;
+}
+
+body {
+  background: #959090;
+}
+
+li:nth-child(even) {
+  color: blue;
+}
+
+li:empty {
+  height: 10px;
+  background: red;
+}
+p:first-child a {
+  color: blue;
+}
+* {
+  font-family: 'Roboto', sans-serif;
+}
