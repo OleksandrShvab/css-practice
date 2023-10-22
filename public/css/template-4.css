@@ -200,10 +200,6 @@
 
 .card_title {
   color: #212529;
-
-  leading-trim: both;
-
-  text-edge: cap;
   font-family: Roboto;
   font-size: 31px;
   font-style: normal;
