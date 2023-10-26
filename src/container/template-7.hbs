@@ -1,0 +1,78 @@
+<header class='header'>
+  {{#with header}}
+    <div class='header_1'>
+      <div class='tp7_logo'>
+        <span class='badge'>{{brandName}}</span>
+      </div>
+      <nav class='header_nav'>
+        {{#each links}}
+          <a href='{{url}}' class='link_item'>{{text}}</a>
+        {{/each}}
+      </nav>
+    </div>
+    <div class='header_2'>
+      <div class='header_2_content'>
+        {{#with ad}}
+          <div class='ad'>
+            <a href='{{url}}' class='ad_link'>Ad</a>
+          </div>
+          <p class='header_2_content_text'>{{text}}:
+            {{url}}</p>
+        {{/with}}
+      </div>
+      <div class='userOnline'>User online:
+        {{userOnline}}</div>
+    </div>
+  {{/with}}
+</header>
+<div class='hero'>
+  {{#with hero}}
+    <h1 class='hero_title'>{{title}}</h1>
+    <p class='hero_text'>{{description}}</p>
+    <a
+      class='button'
+      href='{{button.url}}'
+    >{{button.text}}</a>
+  {{/with}}
+</div>
+<div class='about'>
+  <h5 class='about_title'>{{about.heading}}</h5>
+  <p class='about_text'>{{about.info}}</p>
+</div>
+<div class='articles'>
+  <div class='article_head'>
+    <h4 class='article_title'>Our Articles</h4>
+    <a class='article_button' href='#'>View All</a>
+  </div>
+  <div class='article_cards'>
+    {{#each articles}}
+      <div class='article_card id={{id}}'>
+        <img
+          src='{{photo}}'
+          alt='{{name}}'
+          class='card_image {{#if isNew}} card_image2 {{/if}}'
+        />
+        <h1 class='card_title'>{{name}}</h1>
+        <p class='card_text'>{{description}}</p>
+        <a class='card_button' href='#}'>Read All</a>
+      </div>
+    {{/each}}
+    <div class='card_badge'>new</div>
+  </div>
+
+</div>
+<footer class='footer'>
+  {{#with footer}}
+    <div class='footer_item'>
+      <div class='footer_button_item'>
+        {{#each pages}}
+          <a
+            class='footer_button'
+            href='{{path}}'
+          >{{name}}</a>
+        {{/each}}
+      </div>
+      <p class='copyright'>{{copyright}}</p>
+    </div>
+  {{/with}}
+</footer>
