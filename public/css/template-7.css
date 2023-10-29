@@ -449,3 +449,31 @@
   font-weight: var(--weight_text);
   line-height: 100%;
 }
+
+.button:hover {
+  opacity: 0.7;
+}
+
+.link_item:hover {
+  text-decoration: underline;
+}
+
+.article_button:hover {
+  background: #273554;
+}
+
+.ad:hover {
+  background: #a4b0ca;
+}
+
+.ad_link:hover {
+  color: #0d1524;
+}
+
+.card_button:hover {
+  opacity: 0.7;
+}
+
+.footer_button:hover {
+  text-decoration: underline;
+}
