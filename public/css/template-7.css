@@ -10,19 +10,13 @@
   --size-l: 20px;
   --size-b: 24px;
 
-  --color_border: #aeb2b6ab;
-  --color_primary: rgb(46, 46, 255);
   --color_white: #fff;
-  --color_title: #212521;
-  --color_text: #343434;
 
   --border_radius_d: 12px;
   --border_radius_s: 4px;
 
   --weight_title: 600;
   --weight_text: 400;
-
-  --page_weight: 1000px;
 }
 
 .page {
@@ -74,7 +68,7 @@
 }
 
 .badge {
-  color: #fff;
+  color: var(--color_white);
 
   font-family: Roboto;
   font-size: 14px;
@@ -90,12 +84,12 @@
 }
 
 .link_item {
-  color: #fff;
+  color: var(--color_white);
 
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: var(--weight_text);
   line-height: 100%;
 
   text-decoration: none;
@@ -137,22 +131,22 @@
 }
 
 .header_2_content_text {
-  color: #fff;
+  color: var(--color_white);
 
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: var(--weight_text);
   line-height: 100%;
 }
 
 .userOnline {
-  color: #fff;
+  color: var(--color_white);
 
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: var(--weight_text);
   line-height: 100%;
 }
 
@@ -177,9 +171,9 @@
 }
 
 .hero_title {
-  width: 600px;
+  width: --weight_titlepx;
 
-  color: #fff;
+  color: var(--color_white);
 
   text-align: center;
   font-family: Roboto;
@@ -190,7 +184,7 @@
 }
 
 .hero_text {
-  width: 600px;
+  width: --weight_titlepx;
 
   color: var(--main-additional-font, #9ca3af);
   text-align: center;
@@ -198,7 +192,7 @@
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: var(--weight_text);
   line-height: 150%;
 }
 
@@ -214,7 +208,7 @@
   border-radius: 10px;
   background: #885ffb;
 
-  color: #fff;
+  color: var(--color_white);
 
   text-align: center;
   font-family: Roboto;
@@ -240,9 +234,9 @@
 }
 
 .about_title {
-  width: 600px;
+  width: --weight_titlepx;
 
-  color: #fff;
+  color: var(--color_white);
 
   font-family: Roboto;
   font-size: 24px;
@@ -259,7 +253,7 @@
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: var(--weight_text);
   line-height: 170%;
 }
 
@@ -279,7 +273,7 @@
 }
 
 .article_title {
-  color: #fff;
+  color: var(--color_white);
 
   font-family: Roboto;
   font-size: 32px;
@@ -298,7 +292,7 @@
   border-radius: 10px;
   border: 1px solid var(--main-additional-font, #9ca3af);
 
-  color: #fff;
+  color: var(--color_white);
 
   font-family: Roboto;
   font-size: 16px;
@@ -319,7 +313,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: stretch;
+  justify-content: center;
   gap: 16px;
   flex: 1 0 0;
 }
@@ -334,15 +328,9 @@
   border-radius: 24px;
 }
 
-.card_image2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: stretch;
-  width: 100%;
-  height: 100%;
-  border-radius: 24px;
-
+.article_image {
+  padding: 0;
+  margin: 0;
   position: relative;
 }
 
@@ -357,7 +345,7 @@
   border-radius: 4px;
   background: rgba(251, 95, 95, 0.5);
 
-  color: #fff;
+  color: var(--color_white);
 
   font-family: Roboto;
   font-size: 16px;
@@ -366,14 +354,14 @@
   line-height: 100%;
 
   position: absolute;
-  left: 0;
-  top: 0;
+  right: 5%;
+  bottom: 10%;
 }
 
 .card_title {
   align-self: stretch;
 
-  color: #fff;
+  color: var(--color_white);
 
   font-family: Roboto;
   font-size: 18px;
@@ -389,7 +377,7 @@
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: var(--weight_text);
   line-height: 150%;
 }
 
@@ -403,7 +391,7 @@
   border-radius: 10px;
   background: #885ffb;
 
-  color: #fff;
+  color: var(--color_white);
 
   font-family: Roboto;
   font-size: 14px;
@@ -441,13 +429,13 @@
 }
 
 .footer_button {
-  color: #fff;
+  color: var(--color_white);
 
   text-align: right;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: var(--weight_text);
   line-height: 100%;
 
   text-decoration: none;
@@ -458,6 +446,6 @@
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: var(--weight_text);
   line-height: 100%;
 }
